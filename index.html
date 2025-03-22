@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+    <head>
+        <meta charset="utf-8">
+        <title>ALL FREIGHT SUPPORT SERVICES LTD</title>
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- Template Stylesheet -->
+        <link href="static/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"><!-- Spinner End -->
+                 <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <img src="static/assets/img/logoo.jpg"  width="130" >
+                    <a class="display-6 text-dark"  style="font-size: 20px;">ALL FREIGHT SUPPORT SERVICES LTD. </a>
+                    <!-- <img src="static/assets/img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="{{url_for('home')}}" class="nav-item nav-link active">Home</a>
+                        <a href="{{url_for('values')}}" class="nav-item nav-link">Our Values</a>
+                        <a href="{{url_for('service')}}" class="nav-item nav-link">Service</a>
+                        <a href="{{url_for('view_pdf')}}" class="nav-item nav-link">Company Profile</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Gallery</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="{{url_for('staff_appreciation')}}" class="dropdown-item">Staff Appreciation</a>
+                                <a href="{{url_for('port_activities')}}" class="dropdown-item">Port Activities</a>
+                                <a href="{{url_for('csr_projects')}}" class="dropdown-item">CSR Projects</a>
+
+
+
+                            </div>
+                        </div>
+                        <a href="{{url_for('contact')}}" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fa-solid fa-phone"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fa-solid fa-envelope"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-whatsapp"></i></a>
+
+
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="static/assets/img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Stevedoring</h1>
+                                    <p class="mb-4 fs-5">We provide professional stevedoring services with dedicated personnel for port and terminal operations, along with general maritime services, on/offshore hire, cargo pre-shipment surveys, and thorough inspections of containers and barges.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="static/assets/img/carousel-offshore.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Lifting and Hoisting</h1>
+                                    <p class="mb-4 fs-5">We provide reliable lifting and hoisting solutions with competent personnel, handling both complex and non-complex lifts using certified equipment and accessories to ensure safety, efficiency, and compliance in every operation.  </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="static/assets/img/carousel-3.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                   <!-- <h4 class="text-primary text-uppercase fw-bold mb-4">Testing</h4> -->
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Cargo Handling</h1>
+                                    <p class="mb-4 fs-5"> We specialize in comprehensive cargo handling solutions, ensuring efficiency, safety, and compliance with global standards. Our services cover containerized cargo, break bulk, cargo consolidation, bulk liquid and dry cargoes, chartered vessel operations, and the transportation of heavy and over-dimension vehicles. With a commitment to excellence, we optimize logistics and stevedoring operations to deliver seamless and reliable freight solutions.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="static/assets/img/carousel-Towage.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Marketing / Project Segment Services</h1>
+                                    <p class="mb-4 fs-5">We provide specialized marketing and project segment services tailored to meet the dynamic needs of the maritime and logistics industry. Our expertise spans across project handling, bulk cargo handling, terminal operations, haulage, forwarding, free and bonded warehousing, intermodal transport, export operations, and inland container transfers. With a focus on efficiency, safety, and compliance, we ensure seamless logistics solutions that drive success for our clients.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="static/assets/img/carousel-Cargo.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Cargo Characteristics</h1>
+                                    <p class="mb-4 fs-5">We handle a wide range of cargo with expertise, ensuring safe and efficient transport across all operations. From containerized shipments to bulk liquids like petroleum products and dry commodities such as cement, wheat, and fertilizer, we manage every load with precision. Our services extend to bagged goods, heavy lift cargo, hydro pipes, consolidated shipments, and commercial items, ensuring seamless logistics for export produce, vehicles, motorcycles, and intermodal transport. With a strong focus on safety, compliance, and efficiency, we deliver reliable solutions tailored to industry demands.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <br>
+                    <br>
+                    <h1 class="display-5 mb-4">All Freight Support Services Limited</h1>
+                     <h4 class="text-primary  mb-4">Is a company registered with the Corporate Affairs Commission of the Federal Republic of Nigeria with the registration number: RC 241763. One of the main objectives for which the company was established is to carry out onshore and offshore stevedoring operations in the Oil and Gas Maritime Industry both national and international.
+                    </h4>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3"><i class="fas fa-helmet-safety fa-3x text-primary"></i></div>
+                            <div>
+                                <h4>Highest quality and safety freight and stevedoring services</h4>
+                                <p>Delivering exceptional freight and stevedoring services with the highest standards of quality and safety.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3"><i class="fas fa-bars-progress fa-3x text-primary"></i></div>
+                            <div>
+                                <h4>Dedicated staff strength. </h4>
+                                <p>A skilled and committed team ensuring excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3"><i class="fas fa-ship fa-3x text-primary"></i></div>
+                            <div>
+                                <h4>Successful and safe lifting and hoisting operations</h4>
+                                <p>We ensure successful, safe, and efficient lifting and hoisting operations with precision and care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="display-5 mb-4">Our Mantra</h1>
+                     <h4 class="text-primary  mb-4">AFSSL, Team work in a fun, zero incidence and safe environment</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container service-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h1 class="display-5 text-white mb-4">Why All Freight Support Services Limited</h1>
+                    <br>
+                    <h2 class="text-primary">Our Vision</h2>
+                    <h3 class="mb-0 text-white">To be an indispensable partner to our clients by offering a higher quality of services recognized as the best service provider in the maritime industry.
+                    </h3>
+                </div>
+                <br>
+                <div class="row g-4">
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h2 class="text-primary">Our Mission</h2>
+
+                    <h3 class="mb-0 text-white">To sustain the company's prestige by setting the standard for professionalism in the services we provide to our customers for whom our ultimate goal is to achieve excellence</h3>
+                </div>
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-cogs fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Competency</a>
+                                <p class="mb-0">To deliver our services with technical and professional competence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-briefcase fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Professionalism</a>
+                                <p class="mb-0">To ensure that our logistic service delivery is within the best local and international standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-handshake fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Integrity</a>
+                                <p class="mb-0">To ensure that our client and regulatory authorities requirements and procedures are adhered to at all times.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-helmet-safety fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Safety</a>
+                                <p class="mb-0">That we maintain a safety culture and practice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <br>
+                    <br>
+                    <h1 class="display-5 mb-4">We are the best solution for distributing</h1>
+                    <hr>
+                     <h4 class="text-primary  mb-4">All frieght support services limited is focused on our customer's needs for quality and flexibility, running under the rules and regulation of the nation and maritime industry. All freight support services limited is investment driven, technically and professionally staffed with high standard of proficiency.</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Attractions Start -->
+        <div class="container-fluid attractions py-5">
+            <div class="container attractions-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Operations</h4>
+                    <h1 class="display-5 text-white mb-4">Explore Our Operations</h1>
+                    <p class="text-white mb-0">Step into the heart of our stevedoring services, where precision meets efficiency. Our operations span from cargo handling to logistics coordination, ensuring smooth transitions at every stage. With a dedicated team and cutting edge equipment, we manage every aspect of port activity, driving seamless workflows and reliable service for every shipment.</p>
+                </div>
+                <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="static/assets/img/attraction1.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="static/assets/img/attraction2.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="static/assets/img/attraction3.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="static/assets/img/attraction4.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="static/assets/img/attraction5.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="static/assets/img/attraction6.jpg" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Attractions End -->
+
+        <!-- Gallery Start -->
+        <div class="container-fluid gallery pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Gallery</h4>
+                    <h1 class="display-5 mb-4">Captured Moments</h1>
+                    <p class="mb-0">Dynamic snapshot of our lifting and hoisting in action, capturing the precision and coordination required to move cargo efficiently. Every lift, every shift, and every moment showcases the expertise and dedication behind smooth port operations, optimizing logistics and maintaining safety at every turn.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/attraction7.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/attraction7.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/attraction2.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/attraction2.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/attraction0.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/attraction0.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/attraction4.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/attraction4.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/attraction5.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/attraction5.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <img src="static/assets/img/gallery-6.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="static/assets/img/gallery-6.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery End -->
+
+
+
+
+
+
+        <!-- About Start -->
+        <div class="container-fluid about pb-5" style="background-color: #f8f9fa;">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <!-- Left Column -->
+                    <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <h1 class="display-5 mb-4" style="font-weight: bold; color: #212529;">
+                                <i class="fas fa-graduation-cap text-primary"></i>
+                                All Freight Training & Development
+                            </h1>
+
+                            <p class="mb-4" style="font-size: 18px; line-height: 1.6; text-align: justify;">
+                                Empowering Growth Through Investment in Employees <br>
+                                At All Freight Support Services Ltd, we firmly believe that employees are the cornerstone of any successful organization.
+                                This belief drives our commitment to fostering employee growth and development, not only within our company but also for businesses and individuals seeking to elevate their workforce capabilities.
+                            </p>
+
+                            <p class="mb-5" style="font-size: 18px; line-height: 1.6; text-align: justify;">
+                                Our specialized Employee Training & Development programs are designed to equip teams with the skills, knowledge, and tools necessary to drive productivity, enhance service quality, and ensure long-term success.
+                            </p>
+
+                            <div class="rounded mb-4">
+                                <img src="static/assets/img/training.png" class="img-fluid rounded w-100" alt="Training Image">
+                            </div>
+
+                            <h3 class="text-primary mt-4"><i class="fas fa-question-circle"></i> Why Invest in Employee Training?</h3>
+                            <p style="font-size: 18px; line-height: 1.6;">Investing in employee training is more than just a strategic move—it’s an investment in the future of your business. Here’s how our programs can transform your organization:</p>
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-chart-line fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Increased Company Productivity</h4>
+                                            <p style="text-align: justify;">Well-trained employees work smarter, not harder. They execute tasks more efficiently and contribute meaningfully to organizational goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-check-circle fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Enhanced Product & Service Quality</h4>
+                                            <p style="text-align: justify;">Higher skill levels translate into superior output, improving customer service and refining operational procedures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-handshake fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Reduced Employee Turnover</h4>
+                                            <p style="text-align: justify;">Continuous learning fosters employee loyalty, reducing turnover rates significantly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-users fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Stronger Organizational Culture</h4>
+                                            <p style="text-align: justify;">We instill core values, helping organizations build a culture rooted in professionalism, integrity, and teamwork.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative rounded">
+                            <div class="rounded" style="margin-top: 40px;">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="rounded mb-4">
+                                            <img src="static/assets/img/training1.jpg" class="img-fluid rounded w-100" alt="Training Image">
+                                        </div>
+
+                                        <h3 class="text-primary"><i class="fas fa-star"></i> What Sets Us Apart?</h3>
+                                        <p style="font-size: 18px; text-align: justify;">
+                                            Our training branch isn’t just about teaching it’s about transformation. With decades of experience, we bring real-world expertise to every program.
+                                        </p>
+
+                                        <div class="row g-4">
+                                            <div class="col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-3"><i class="fas fa-cogs fa-3x text-primary"></i></div>
+                                                    <div>
+                                                        <h4>Customized Solutions</h4>
+                                                        <p>Tailored training modules designed for your business or industry.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-3"><i class="fas fa-chalkboard-teacher fa-3x text-primary"></i></div>
+                                                    <div>
+                                                        <h4>Experienced Instructors</h4>
+                                                        <p>Led by professionals with real-world industry experience.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-3"><i class="fas fa-tools fa-3x text-primary"></i></div>
+                                                    <div>
+                                                        <h4>Practical Application</h4>
+                                                        <p>Hands-on training ensures immediate applicability.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-3"><i class="fas fa-book fa-3x text-primary"></i></div>
+                                                    <div>
+                                                        <h4>Comprehensive Coverage</h4>
+                                                        <p>From leadership to technical skills, we cover all aspects of growth.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="text-primary mt-4"><i class="fas fa-users-cog"></i> Who Can Benefit?</h3>
+                                        <p style="font-size: 18px; text-align: justify;">
+                                            Whether you’re a business leader or an individual looking to advance your career, our programs are for everyone:
+                                        </p>
+
+                                        <ul style="font-size: 18px;">
+                                            <li><i class="fas fa-building text-primary"></i> <b>For Organizations:</b> Boost team performance, improve efficiency, and foster a culture of continuous improvement.</li>
+                                            <li><i class="fas fa-user-graduate text-primary"></i> <b>For Individuals:</b> Gain certifications, refine skills, and prepare for leadership roles.</li>
+                                        </ul>
+
+                                        <h3 class="text-primary mt-4"><i class="fas fa-handshake"></i> Let’s Grow Together!</h3>
+                                        <p style="font-size: 18px; text-align: justify;">
+                                            At All Freight Support Services Ltd, we empower businesses by developing their most valuable asset—their people.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Meet Our Team</h4>
+                    <h1 class="display-5 mb-4">Our Dedicated Team Member</h1>
+                    <p class="mb-0">Our team is dedicated to ensuring the smoothest stevedoring operations, managing logistics, coordination, and support with unparalleled efficiency. With a focus on precision, we streamline processes, maintain safety standards, and guarantee timely deliveries, making every step of the operation seamless for our clients. We pride ourselves on our expertise, reliability, and commitment to excellence in every task we undertake.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Emmanuel Efe</h4>
+                                        <p class="mb-0">Head of Production</p>
+                                    </div>
+                                    <div>
+                                        <img src="static/assets/img/Emmanuel.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Joy Ediale</h4>
+                                        <p class="mb-0">Human Resources Manager</p>
+                                    </div>
+                                    <div>
+                                        <img src="static/assets/img/joy.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Oluchi Peace</h4>
+                                        <p class="mb-0">Admin/Accountant</p>
+                                    </div>
+                                    <div>
+                                        <img src="static/assets/img/peace.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+                    <h1 class="text-primary">Our Certifications</h1>
+                    <h4 class="text-primary text-white mb-4">Our commitment to excellence is backed by industry-leading certifications, and compliance ensuring the highest standards in stevedoring operations. These certifications reflect our dedication to safety, efficiency, and reliability in cargo handling, onshore and offshore stevedoring operations, lifting and hoisting operation, setting us apart as a trusted partner in the logistics and Oil and Gas industry.</h4>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
+                            Certified by the Nigerian Ports Authority, upholding excellence and compliance in port operations to support safe, efficient, and reliable maritime services across Nigeria.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/NPA.jpg" class="img-fluid" alt="Image">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>NPA</h4>
+                                <p class="text-start text-white">Nigerian Ports Authority</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
+                            Certified by NIMASA for compliance with maritime regulations, ensuring safety and labor standards in Nigerian coastal waters.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/NEW-NIMASA-LOGO.jpg" class="img-fluid" alt="Image">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>NIMASA</h4>
+                                <p class="text-start text-white">Nigerian Maritime Administration and Safety Agency</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
+                            Certified by the International Organization for Standardization (ISO), demonstrating our commitment to global quality, safety, and operational excellence in stevedoring services.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/iso logo.gif" alt="Excellence" class="img-fluid" style="max-width: 100px;">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>ISO</h4>
+                                <p class="text-start text-white">International Organization for Standardization</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
+                            Certified by the National Association of Stevedoring Operators (NASO), promoting and protecting industry standards while fostering essential interactions to support growth within the stevedoring sector.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/NASO_LOGO.png" alt="Trust" class="img-fluid" style="max-width: 100px;">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>NASO</h4>
+                                <p class="text-start text-white">National Association of Stevedoring Operators</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">Certified by the Institute of Safety Professionals of Nigeria, demonstrating our commitment to maintaining the highest standards of safety and risk management in our operations.</p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/NEW-ISPON-LOGO.jpg" class="img-fluid" alt="Image">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>ISPON</h4>
+                                <p class="text-start text-white">Institute of Safety Professionals of Nigeria</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
+                            Certified by the International Association of Drilling Contractors (IADC), reflecting our commitment to the highest industry standards, safety practices, and operational excellence in drilling operations.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="static/assets/img/IADC.png" alt="Excellence" class="img-fluid" style="max-width: 100px;">
+                                <div class="testimonial-quote ">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>IADC</h4>
+                                <p class="text-start text-white">International Association of Drilling Contractors</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                 <h4 class="text-white mb-4"> <img src="static/assets/img/logoo.jpg" width="100" alt="Logo"> AFSS Limited</h4>
+
+                            </a>
+                            <p class="mb-2">Is a company registered with the Corporate Affairs Commission of the Federal Republic of Nigeria with the registration number: RC 241763</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">6A Hinderer Road Apapa G.R.A, Lagos</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@allfreightsupportservices.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">+2347066511103</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="{{url_for('home')}}"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="{{url_for('values')}}"><i class="fas fa-angle-right me-2"></i> Values</a>
+                            <a href="{{url_for('service')}}"><i class="fas fa-angle-right me-2"></i> Service</a>
+                            <a href="{{url_for('view_pdf')}}"><i class="fas fa-angle-right me-2"></i> Company Profile</a>
+                            <a href="{{url_for('staff_appreciation')}}"><i class="fas fa-angle-right me-2"></i> Staff Appreciation</a>
+                            <a href="{{url_for('port_activities')}}"><i class="fas fa-angle-right me-2"></i> Port Activities</a>
+                            <a href="{{url_for('csr_projects')}}"><i class="fas fa-angle-right me-2"></i> CSR Projects</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>All Freight Support Services LTD 2024</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/counterup/counterup.min.js"></script>
+    <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+    </body>
+</html>
