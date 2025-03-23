@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/service", "destination": "/service.html" },
+    { "source": "/csr_projects", "destination": "/csr_projects.html" },
+    { "source": "/staff_appreciation", "destination": "/staff_appreciation.html" },
+    { "source": "/port_activities", "destination": "/port_activities.html" },
+    { "source": "/values", "destination": "/values.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ]
+}
