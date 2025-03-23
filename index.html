@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>ALL FREIGHT SUPPORT SERVICES LTD</title>
-        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -20,17 +20,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
         <!-- Template Stylesheet -->
-        <link href="static/css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -44,9 +44,9 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="" class="navbar-brand p-0">
-                    <img src="static/assets/img/logoo.jpg"  width="130" >
-                    <a class="display-6 text-dark"  style="font-size: 20px;">ALL FREIGHT SUPPORT SERVICES LTD. </a>
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="assets/img/logoo.jpg" width="130">
+                    <a class="display-6 text-dark" style="font-size: 20px;">ALL FREIGHT SUPPORT SERVICES LTD.</a>
                     <!-- <img src="static/assets/img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -54,35 +54,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="{{url_for('home')}}" class="nav-item nav-link active">Home</a>
-                        <a href="{{url_for('values')}}" class="nav-item nav-link">Our Values</a>
-                        <a href="{{url_for('service')}}" class="nav-item nav-link">Service</a>
-                        <a href="{{url_for('view_pdf')}}" class="nav-item nav-link">Company Profile</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="values.html" class="nav-item nav-link">Our Values</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="company_profile.html" class="nav-item nav-link">Company Profile</a>
 
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Gallery</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Gallery</a>
                             <div class="dropdown-menu m-0">
-                                <a href="{{url_for('staff_appreciation')}}" class="dropdown-item">Staff Appreciation</a>
-                                <a href="{{url_for('port_activities')}}" class="dropdown-item">Port Activities</a>
-                                <a href="{{url_for('csr_projects')}}" class="dropdown-item">CSR Projects</a>
-
-
-
+                           <a href="staff_appreciation.html" class="dropdown-item">Staff Appreciation</a>
+                                <a href="port_activities.html" class="dropdown-item">Port Activities</a>
+                                <a href="csr_projects.html" class="dropdown-item">CSR Projects</a>
                             </div>
                         </div>
-                        <a href="{{url_for('contact')}}" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fa-solid fa-phone"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fa-solid fa-envelope"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-whatsapp"></i></a>
-
-
-
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -92,7 +84,7 @@
         <!-- Carousel Start -->
         <div class="header-carousel owl-carousel">
             <div class="header-carousel-item">
-                <img src="static/assets/img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                <img src="assets/img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container align-items-center py-4">
                         <div class="row g-5 align-items-center">
@@ -110,7 +102,7 @@
                 </div>
             </div>
             <div class="header-carousel-item">
-                <img src="static/assets/img/carousel-offshore.jpg" class="img-fluid w-100" alt="Image">
+                <img src="assets/img/carousel-offshore.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container py-4">
                         <div class="row g-5 align-items-center">
@@ -127,7 +119,7 @@
                 </div>
             </div>
             <div class="header-carousel-item">
-                <img src="static/assets/img/carousel-3.jpg" class="img-fluid w-100" alt="Image">
+                <img src="assets/img/carousel-3.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container py-4">
                         <div class="row g-5 align-items-center">
@@ -145,26 +137,9 @@
                     </div>
                 </div>
             </div>
-            <div class="header-carousel-item">
-                <img src="static/assets/img/carousel-Towage.jpg" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption">
-                    <div class="container py-4">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                <div class="text-start">
-                                    <h1 class="display-4 text-uppercase text-white mb-4">Marketing / Project Segment Services</h1>
-                                    <p class="mb-4 fs-5">We provide specialized marketing and project segment services tailored to meet the dynamic needs of the maritime and logistics industry. Our expertise spans across project handling, bulk cargo handling, terminal operations, haulage, forwarding, free and bonded warehousing, intermodal transport, export operations, and inland container transfers. With a focus on efficiency, safety, and compliance, we ensure seamless logistics solutions that drive success for our clients.
-                                    </p>
 
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="header-carousel-item">
-                <img src="static/assets/img/carousel-Cargo.jpg" class="img-fluid w-100" alt="Image">
+                <img src="assets/img/carousel-Cargo.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="container py-4">
                         <div class="row g-5 align-items-center">
@@ -181,7 +156,24 @@
                     </div>
                 </div>
             </div>
+            <div class="header-carousel-item">
+                <img src="assets/img/carousel-staff.jpg" class="img-fluid w-100" alt="Dedicated Logistics Team">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Our Dedicated Experts</h1>
+                                    <p class="mb-4 fs-5">At the heart of our operations lies a team of highly skilled professionals committed to delivering excellence. From stevedoring and cargo handling to logistics coordination and marine support, our dedicated workforce ensures precision, safety, and efficiency across all aspects of your supply chain needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
         <!-- Carousel End -->
 
 
@@ -342,27 +334,27 @@
                 </div>
                 <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="static/assets/img/attraction1.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction1.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="static/assets/img/attraction2.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction2.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="static/assets/img/attraction3.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction3.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="static/assets/img/attraction4.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction4.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
-                        <img src="static/assets/img/attraction5.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction5.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
-                        <img src="static/assets/img/attraction6.jpg" class="img-fluid rounded w-100" alt="">
+                        <img src="assets/img/attraction6.jpg" class="img-fluid rounded w-100" alt="">
                         <a href="#" class="attractions-name"></a>
                     </div>
                 </div>
@@ -381,49 +373,73 @@
                 <div class="row g-4">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/attraction7.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/carousel-staff.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/attraction7.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/carousel-staff.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/attraction2.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/port2.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/attraction2.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/port2.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="assets/img/port4.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="assets/img/port4.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <img src="assets/img/attraction7.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="assets/img/attraction7.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="assets/img/attraction2.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <div class="search-icon">
+                                <a href="assets/img/attraction2.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/attraction0.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/attraction0.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/attraction0.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/attraction0.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/attraction4.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/attraction4.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/attraction4.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/attraction4.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/attraction5.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/attraction5.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/attraction5.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/attraction5.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="gallery-item">
-                            <img src="static/assets/img/gallery-6.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                            <img src="assets/img/gallery-6.jpg" class="img-fluid rounded w-100 h-100" alt="">
                             <div class="search-icon">
-                                <a href="static/assets/img/gallery-6.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
+                                <a href="assets/img/gallery-6.jpg" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -460,7 +476,7 @@
                             </p>
 
                             <div class="rounded mb-4">
-                                <img src="static/assets/img/training.png" class="img-fluid rounded w-100" alt="Training Image">
+                                <img src="assets/img/training.png" class="img-fluid rounded w-100" alt="Training Image">
                             </div>
 
                             <h3 class="text-primary mt-4"><i class="fas fa-question-circle"></i> Why Invest in Employee Training?</h3>
@@ -514,7 +530,7 @@
                                 <div class="row g-0">
                                     <div class="col-lg-12">
                                         <div class="rounded mb-4">
-                                            <img src="static/assets/img/training1.jpg" class="img-fluid rounded w-100" alt="Training Image">
+                                            <img src="assets/img/training1.jpg" class="img-fluid rounded w-100" alt="Training Image">
                                         </div>
 
                                         <h3 class="text-primary"><i class="fas fa-star"></i> What Sets Us Apart?</h3>
@@ -573,7 +589,7 @@
 
                                         <h3 class="text-primary mt-4"><i class="fas fa-handshake"></i> Let’s Grow Together!</h3>
                                         <p style="font-size: 18px; text-align: justify;">
-                                            At All Freight Support Services Ltd, we empower businesses by developing their most valuable asset—their people.
+                                            At All Freight Support Services Ltd, we empower businesses by developing their most valuable asset their people.
                                         </p>
                                     </div>
                                 </div>
@@ -602,18 +618,13 @@
                             <div class="team-content">
                                 <div class="d-flex justify-content-between border-bottom pb-4">
                                     <div class="text-start">
-                                        <h4 class="mb-0">Emmanuel Efe</h4>
-                                        <p class="mb-0">Head of Production</p>
+                                        <h4 class="mb-0">Eyisi Oluchi Peace</h4>
+                                        <p class="mb-0">Admin / Account Support</p>
                                     </div>
                                     <div>
-                                        <img src="static/assets/img/Emmanuel.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                        <img src="assets/img/Peace.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
                                     </div>
                                 </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -622,17 +633,45 @@
                             <div class="team-content">
                                 <div class="d-flex justify-content-between border-bottom pb-4">
                                     <div class="text-start">
-                                        <h4 class="mb-0">Joy Ediale</h4>
-                                        <p class="mb-0">Human Resources Manager</p>
+                                        <h4 class="mb-0">Esther Anietie Udoh</h4>
+                                        <p class="mb-0">Data Entry clerk</p>
                                     </div>
                                     <div>
-                                        <img src="static/assets/img/joy.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                        <img src="assets/img/Esther.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
                                     </div>
                                 </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Williams Ebereonwu</h4>
+                                        <p class="mb-0">Rig-loft/Facility Officer</p>
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/Williams.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Chinedu Ugbor</h4>
+                                        <p class="mb-0">Lifting and Hoisting Supervisor</p>
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/Chinedu.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -641,19 +680,28 @@
                             <div class="team-content">
                                 <div class="d-flex justify-content-between border-bottom pb-4">
                                     <div class="text-start">
-                                        <h4 class="mb-0">Oluchi Peace</h4>
-                                        <p class="mb-0">Admin/Accountant</p>
+                                        <h4 class="mb-0">Blessing Agiamah</h4>
+                                        <p class="mb-0">Secretary</p>
                                     </div>
                                     <div>
-                                        <img src="static/assets/img/peace.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                        <img src="assets/img/Blessing.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
                                     </div>
                                 </div>
-                                <div class="team-icon rounded-pill my-4 p-3">
-
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Idris Abubakar Sadiq</h4>
+                                        <p class="mb-0">IT Officer</p>
+                                    </div>
+                                    <div>
+                                        <img src="assets/img/Sadiq_Passport.jpg" class="img-fluid rounded" style="width: 150px; height: 150px;" alt="">
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -678,7 +726,7 @@
                         </p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/NPA.jpg" class="img-fluid" alt="Image">
+                                <img src="assets/img/NPA.jpg" class="img-fluid" alt="Image">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -704,7 +752,7 @@
                         </p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/NEW-NIMASA-LOGO.jpg" class="img-fluid" alt="Image">
+                                <img src="assets/img/NEW-NIMASA-LOGO.jpg" class="img-fluid" alt="Image">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -728,7 +776,7 @@
                         </p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/iso logo.gif" alt="Excellence" class="img-fluid" style="max-width: 100px;">
+                                <img src="assets/img/iso logo.gif" alt="Excellence" class="img-fluid" style="max-width: 100px;">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -747,11 +795,35 @@
                     </div>
                     <div class="testimonial-item p-4">
                         <p class="text-white fs-4 mb-4">
+                            Compliant with the International Maritime Dangerous Goods (IMDG) Code, ensuring the safe handling, storage, and transportation of hazardous materials across global waters.
+                        </p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="assets/img/imdg.png" alt="IMDG Compliance" class="img-fluid" style="max-width: 100px;">
+                                <div class="testimonial-quote">
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>IMDG</h4>
+                                <p class="text-start text-white">International Maritime Dangerous Goods Code</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">
                             Certified by the National Association of Stevedoring Operators (NASO), promoting and protecting industry standards while fostering essential interactions to support growth within the stevedoring sector.
                         </p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/NASO_LOGO.png" alt="Trust" class="img-fluid" style="max-width: 100px;">
+                                <img src="assets/img/NASO_LOGO.png" alt="Trust" class="img-fluid" style="max-width: 100px;">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -775,7 +847,7 @@
                         <p class="text-white fs-4 mb-4">Certified by the Institute of Safety Professionals of Nigeria, demonstrating our commitment to maintaining the highest standards of safety and risk management in our operations.</p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/NEW-ISPON-LOGO.jpg" class="img-fluid" alt="Image">
+                                <img src="assets/img/NEW-ISPON-LOGO.jpg" class="img-fluid" alt="Image">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -798,7 +870,7 @@
                         </p>
                         <div class="testimonial-inner">
                             <div class="testimonial-img">
-                                <img src="static/assets/img/IADC.png" alt="Excellence" class="img-fluid" style="max-width: 100px;">
+                                <img src="assets/img/IADC.png" alt="Excellence" class="img-fluid" style="max-width: 100px;">
                                 <div class="testimonial-quote ">
                                 </div>
                             </div>
@@ -828,7 +900,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="index.html" class="p-0">
-                                 <h4 class="text-white mb-4"> <img src="static/assets/img/logoo.jpg" width="100" alt="Logo"> AFSS Limited</h4>
+                                 <h4 class="text-white mb-4"> <img src="assets/img/logoo.jpg" width="100" alt="Logo"> AFSS Limited</h4>
 
                             </a>
                             <p class="mb-2">Is a company registered with the Corporate Affairs Commission of the Federal Republic of Nigeria with the registration number: RC 241763</p>
@@ -893,15 +965,15 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="static/lib/wow/wow.min.js"></script>
-    <script src="static/lib/easing/easing.min.js"></script>
-    <script src="static/lib/waypoints/waypoints.min.js"></script>
-    <script src="static/lib/counterup/counterup.min.js"></script>
-    <script src="static/lib/lightbox/js/lightbox.min.js"></script>
-    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
     <!-- Template Javascript -->
-    <script src="static/js/main.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>
